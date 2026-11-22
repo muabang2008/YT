@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+
+        body {
+            padding-bottom: 1000px;
+        }
+
+        .grid-exmpl {
+            display: grid;
+            grid-template-columns: 100px 100px;
+        }
+
+        .grid-exmple {
+            display: grid;
+            grid-template-columns: 100px  100px 200px;
+            margin-top: 30px;
+        }
+
+        .grid-example {
+            display: grid;
+            grid-template-columns: 100px  1fr;
+            margin-top: 30px;
+        }
+
+        .grid-example1 {
+            display: grid;
+            grid-template-columns: 100px  1fr 1fr;
+            margin-top: 30px;
+        }
+
+        .grid-example2 {
+            display: grid;
+            grid-template-columns: 100px  1fr 2fr;
+            margin-top: 30px;
+        }
+
+        .grid-example3 {
+            display: grid;
+            grid-template-columns: 1fr  1fr 1fr;
+            margin-top: 30px;
+            height: 400px;
+            column-gap: 20px;
+            row-gap: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-exmpl">
+        <div style="background-color: blue;">
+            div 1
+        </div>
+
+        <div style="background-color: pink;">
+            div 2 <p>Text</p>
+        </div>
+    </div>
+
+    <div class="grid-exmple">
+        <div style="background-color: blue;">
+            100px
+        </div>
+
+        <div style="background-color: pink;">
+            100px <p>Text</p>
+        </div>
+
+        <div style="background-color: rgb(0, 255, 64);">
+            200px
+        </div>
+    </div>
+
+    <div class="grid-example">
+        <div style="background-color: blue;">
+            100px
+        </div>
+        
+        <div style="background-color: rgb(140, 55, 200);">
+            1fr
+        </div>
+    </div>
+
+    <div class="grid-example1">
+        <div style="background-color: blue;">
+            100px
+        </div>
+        
+        <div style="background-color: rgb(140, 55, 200);">
+            1fr
+        </div>
+
+        <div style="background-color: rgb(14, 125, 47);">
+            1fr
+        </div>
+    </div>
+
+    <div class="grid-example2">
+        <div style="background-color: blue;">
+            100px
+        </div>
+        
+        <div style="background-color: rgb(140, 55, 200);">
+            1fr
+        </div>
+
+        <div style="background-color: rgb(14, 125, 47);">
+            2fr
+        </div>
+    </div>
+
+    <div class="grid-example3">
+        <div style="background-color: lightblue;">
+            1fr
+        </div>
+        
+        <div style="background-color: lightpink;">
+            1fr
+        </div>
+
+        <div style="background-color: lightblue;">
+            1fr
+        </div>
+
+        <div style="background-color: lightpink;">
+            1fr
+        </div>
+        
+        <div style="background-color: lightblue;">
+            1fr
+        </div>
+
+        <div style="background-color: lightpink;">
+            1fr
+        </div>
+    </div>
+</body>
+</html>
